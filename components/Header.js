@@ -18,18 +18,14 @@ const Header = () => {
         <h1 className="logo">ag</h1>
         <ul>
           <HStack spacing="10px" fontWeight="bold">
-            <Link href="/">
-              <a>home.</a>
-            </Link>
-            <Link href="/about">
-              <a>about me.</a>
-            </Link>
-            <Link href="/projects">
-              <a>projects.</a>
-            </Link>
-            <Link href="/contact">
-              <a>contact.</a>
-            </Link>
+            {/* <Link href="/">home.</Link> */}
+            <Link href="#top">home.</Link>
+            {/* <Link href="/about">about me.</Link> */}
+            <Link href="#about">about me.</Link>
+            {/* <Link href="/projects">projects.</Link> */}
+            <Link href="#projects">projects.</Link>
+            {/* <Link href="/contact">contact.</Link> */}
+            <Link href="#form">contact.</Link>
           </HStack>
         </ul>
         <Button onClick={toggleColorMode}>
