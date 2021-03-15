@@ -1,4 +1,4 @@
-import { Button, Flex, Box } from "@chakra-ui/react";
+import { Button, Flex, Box, Link } from "@chakra-ui/react";
 import Animation from "../components/Animation";
 
 const Header = () => {
@@ -16,11 +16,12 @@ const Header = () => {
         alignItems="flex-start"
         justifyContent="center"
       >
-        <a
+        <Link
+          href="#about"
           class="ca3-scroll-down-link ca3-scroll-down-arrow"
           data-ca3_iconfont="ETmodules"
           data-ca3_icon=""
-        ></a>
+        ></Link>
         <Box my={4}>
           <h1>Full-stack Software Developer.</h1>
           <p>

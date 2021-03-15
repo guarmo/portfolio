@@ -27,11 +27,6 @@ body {
 }
 
 /* Scroll icon */
-/* body {
-  background-color: #000;
-  overflow: hidden;
-} */
-
 html body [data-ca3_iconfont="ETmodules"]::before {
   font-family: "ETmodules";
 }
@@ -54,7 +49,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   line-height: 60px;
   position: absolute;
   left: 50%;
-  bottom: 0px;
+  bottom: 40px;
   color: #fff;
   text-align: center;
   font-size: 70px;
