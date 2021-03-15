@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Fonts />
       <Container px="2rem" maxW="container.lg">
-        <Header />
+        <Header pos="fixed" top="0" w="100%" />
         <Component {...pageProps} />
       </Container>
     </ChakraProvider>
