@@ -1,42 +1,28 @@
-import {
-  Link,
-  Flex,
-  Icon,
-  HStack,
-  useColorMode,
-  Button,
-} from "@chakra-ui/react";
-import { BsChevronDown } from "react-icons/bs";
-import { FaMoon, FaRegMoon } from "react-icons/fa";
+import { Button, Flex, Box } from "@chakra-ui/react";
+import Animation from "../components/Animation";
 
 const Header = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-
+  /* Header */
   return (
-    <nav>
-      <Flex alignItems="center" justifyContent="space-between">
-        <h1 className="logo">ag</h1>
-        <ul>
-          <HStack spacing="10px" fontWeight="bold">
-            {/* <Link href="/">home.</Link> */}
-            <Link href="#top">home.</Link>
-            {/* <Link href="/about">about me.</Link> */}
-            <Link href="#about">about me.</Link>
-            {/* <Link href="/projects">projects.</Link> */}
-            <Link href="#projects">projects.</Link>
-            {/* <Link href="/contact">contact.</Link> */}
-            <Link href="#form">contact.</Link>
-          </HStack>
-        </ul>
-        <Button onClick={toggleColorMode}>
-          {colorMode === "light" ? (
-            <Icon as={FaRegMoon} />
-          ) : (
-            <Icon as={FaMoon} />
-          )}
-        </Button>
+    <Flex minH="85vh" justifyContent="center" alignItems="center">
+      <Flex
+        maxW="60%"
+        flexDirection="column"
+        alignItems="flex-start"
+        justifyContent="center"
+      >
+        <Box my={4}>
+          <h1>Full-stack Software Developer.</h1>
+          <p>
+            Interested in developing web applications that bring social change.{" "}
+          </p>
+        </Box>
+        <Button colorScheme="blue">Button</Button>
       </Flex>
-    </nav>
+      <Box minW="30%">
+        <Animation width="100%" />
+      </Box>
+    </Flex>
   );
 };
 

@@ -1,7 +1,7 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { Container } from "@chakra-ui/react";
 import Fonts from "../components/Fonts";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 
 const theme = extendTheme({
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <Fonts />
       <Container px="2rem" maxW="container.lg">
-        <Header pos="fixed" top="0" w="100%" />
+        <Navbar pos="fixed" top="0" w="100%" />
         <Component {...pageProps} />
       </Container>
     </ChakraProvider>
