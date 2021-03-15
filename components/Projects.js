@@ -8,6 +8,7 @@ const Projects = () => {
       justifyContent="center"
       id="projects"
       minH="100vh"
+      position="relative"
     >
       <h1>Projects</h1>
       <Grid templateColumns="repeat(4, 1fr)" gap={6}>
