@@ -1,4 +1,4 @@
-import { Flex, Box, Icon, Grid, Link } from "@chakra-ui/react";
+import { Flex, Box, Icon, Grid, Link, Heading, Text } from "@chakra-ui/react";
 
 import { AiFillHtml5 } from "react-icons/ai";
 import {
@@ -28,7 +28,12 @@ const About = () => {
           data-ca3_iconfont="ETmodules"
           data-ca3_icon=""
         ></Link>
-        <h1>About</h1>
+
+        <h1 className="subtitle fancy">
+          <span>
+            <Text fontSize="50px">about me</Text>
+          </span>
+        </h1>
         <Box my={4} textAlign="center">
           <h1>I'm an italian Software Developer based in Berlin.</h1>
           <p>

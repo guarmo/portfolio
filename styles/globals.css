@@ -26,6 +26,37 @@ body {
   margin: 0;
 }
 
+/* main-h */
+.subtitle {
+  margin: 0 0 20rem 0;
+}
+.fancy {
+  line-height: 0;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 100vw;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
 /* Scroll icon */
 html body [data-ca3_iconfont="ETmodules"]::before {
   font-family: "ETmodules";

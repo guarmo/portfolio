@@ -7,6 +7,7 @@ import "../styles/globals.css";
 const theme = extendTheme({
   fonts: {
     body: "Roboto Mono",
+    paragraph: "Roboto Slab",
   },
 });
 

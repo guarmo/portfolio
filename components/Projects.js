@@ -1,4 +1,4 @@
-import { Flex, Box, Grid, Link } from "@chakra-ui/react";
+import { Flex, Box, Grid, Link, Text } from "@chakra-ui/react";
 
 const Projects = () => {
   /* Projects */
@@ -11,7 +11,11 @@ const Projects = () => {
         minH="100vh"
         position="relative"
       >
-        <h1>Projects</h1>
+        <h1 className="subtitle fancy">
+          <span>
+            <Text fontSize="50px">projects</Text>
+          </span>
+        </h1>
         <Grid
           templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
           gap={6}

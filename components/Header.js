@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Flex
       position="relative"
-      minH="85vh"
+      minH="90vh"
       flexDirection={{ base: "column", md: "row" }}
       alignItems="center"
       justifyContent={{ base: "center", md: "space-between" }}
@@ -18,6 +18,7 @@ const Header = () => {
         flexDirection="column"
         alignItems="flex-start"
         justifyContent="center"
+        minW="50%"
       >
         <Link
           outlineColor="transparent"
@@ -26,7 +27,7 @@ const Header = () => {
           data-ca3_iconfont="ETmodules"
           data-ca3_icon=""
         ></Link>
-        <Box my={4} minW="60%">
+        <Box my={4}>
           <h1>Full-stack Software Developer.</h1>
           <p>
             Interested in developing
@@ -43,7 +44,7 @@ const Header = () => {
           </p>
         </Box>
       </Flex>
-      <Box minW="40%" mt={20}>
+      <Box minW="50%" mt={20}>
         <Animation width="100%" />
       </Box>
     </Flex>

@@ -7,6 +7,7 @@ import {
   Textarea,
   VStack,
   Icon,
+  Text,
 } from "@chakra-ui/react";
 
 import { AiOutlineTwitter, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
@@ -21,7 +22,11 @@ const Contact = () => {
         id="form"
         minH="100vh"
       >
-        <h1>Contact</h1>
+        <h1 className="subtitle fancy">
+          <span>
+            <Text fontSize="50px">contacts</Text>
+          </span>
+        </h1>
         <form>
           <VStack spacing="10px">
             <FormControl id="email">
