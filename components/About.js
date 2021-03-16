@@ -34,7 +34,11 @@ const About = () => {
           <p>
             I mainly develop in JavaScript and these are the technologies I use:{" "}
           </p>
-          <Grid my={4} templateColumns="repeat(4, 1fr)" gap={6}>
+          <Grid
+            my={4}
+            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
+            gap={6}
+          >
             <Flex flexDirection="column" alignItems="center">
               <Icon w="100%" h="50" as={AiFillHtml5} />
               <h1>HTML5</h1>

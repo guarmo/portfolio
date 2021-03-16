@@ -12,7 +12,10 @@ const Projects = () => {
         position="relative"
       >
         <h1>Projects</h1>
-        <Grid templateColumns="repeat(4, 1fr)" gap={6}>
+        <Grid
+          templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
+          gap={6}
+        >
           <Box w="100%" h="200" border=" 2px solid gray" />
           <Box w="100%" h="200" border=" 2px solid gray" />
           <Box w="100%" h="200" border=" 2px solid gray" />

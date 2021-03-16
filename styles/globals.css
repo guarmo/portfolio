@@ -44,7 +44,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .ca3-scroll-down-link {
   cursor: pointer;
   height: 20px;
-  width: 40px;
+  width: 20px;
   margin: 0px 0 -20px 0;
   line-height: 60px;
   position: absolute;
