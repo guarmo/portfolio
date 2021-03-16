@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Particles from "react-tsparticles";
 
-class Animation extends Component {
+className Animation extends Component {
   constructor(props) {
     super(props);
 
