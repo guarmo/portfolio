@@ -45,9 +45,10 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   cursor: pointer;
   height: 20px;
   width: 40px;
-  margin: 0px 0 0 -20px;
+  margin: 0px 0 -20px 0;
   line-height: 60px;
   position: absolute;
+
   left: 50%;
   bottom: 40px;
   color: #fff;

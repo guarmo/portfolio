@@ -29,7 +29,7 @@ const About = () => {
           data-ca3_icon=""
         ></Link>
         <h1>About</h1>
-        <Box my={4}>
+        <Box my={4} textAlign="center">
           <h1>I'm an italian Software Developer based in Berlin.</h1>
           <p>
             I mainly develop in JavaScript and these are the technologies I use:{" "}
