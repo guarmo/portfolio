@@ -23,7 +23,7 @@ const Projects = () => {
       >
         <h1 mt="30rem" className="subtitle fancy">
           <span>
-            <Text fontSize="50px">projects</Text>
+            <Text fontSize="40px">projects</Text>
           </span>
         </h1>
         <Grid
@@ -50,14 +50,8 @@ const Projects = () => {
               </Box>
               <Flex>
                 <Link
-                  href="https://secret-badlands-45247.herokuapp.com/"
-                  target="_blank"
-                >
-                  Live
-                </Link>
-                <Link
                   ml="4"
-                  href="https://github.com/guarmo/DevChallenges/tree/main/my-unsplash"
+                  href="https://github.com/guarmo/portfolio"
                   target="_blank"
                 >
                   Code
@@ -189,6 +183,7 @@ const Projects = () => {
                 <Text my="4">Search for any IP address or domain.</Text>
                 <HStack>
                   <Badge colorScheme="cyan">JavaScript</Badge>
+                  <Badge colorScheme="red">Geocoding</Badge>
                 </HStack>
               </Box>
               <Flex>
@@ -300,6 +295,7 @@ const Projects = () => {
                   Fylo landing page with dark theme and features grid.
                 </Text>
                 <HStack>
+                  <Badge colorScheme="red">Layout</Badge>
                   <Badge colorScheme="gray">Responsive</Badge>
                 </HStack>
               </Box>
@@ -334,6 +330,7 @@ const Projects = () => {
                 <Heading size="lg">Insure</Heading>
                 <Text my="4">Insure landing page.</Text>
                 <HStack>
+                  <Badge colorScheme="red">Layout</Badge>
                   <Badge colorScheme="gray">Responsive</Badge>
                 </HStack>
               </Box>

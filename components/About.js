@@ -9,6 +9,8 @@ import {
   DiMongodb,
   DiNodejsSmall,
   DiSass,
+  DiMaterializecss,
+  DiNpm,
 } from "react-icons/di";
 import {
   SiTailwindcss,
@@ -16,6 +18,7 @@ import {
   SiNextDotJs,
   SiFirebase,
 } from "react-icons/si";
+import { FaGit } from "react-icons/fa";
 
 const About = () => {
   /* About */
@@ -32,15 +35,15 @@ const About = () => {
       >
         <h1 className="subtitle fancy">
           <span>
-            <Text fontSize="50px">about me</Text>
+            <Text fontSize="40px">about me</Text>
           </span>
         </h1>
         <Box my={4} textAlign="center">
-          <h1>I'm an italian Software Developer based in Berlin.</h1>
-          <p>
+          <Text>I'm an italian Software Developer based in Berlin.</Text>
+          <Text>
             I develop in JavaScript and these are the main {/* @todo */}
-            <span color="red">technologies</span> I use:{" "}
-          </p>
+            <span className="colorSpan">technologies</span> I use:{" "}
+          </Text>
           <Grid
             my={10}
             templateColumns={{ base: "repeat(3, 1fr)", md: "repeat(4, 1fr)" }}
@@ -112,6 +115,16 @@ const About = () => {
                 _hover={{ transform: "scale(1.2)" }}
                 w="100%"
                 h="50px"
+                as={DiMaterializecss}
+              />
+              <h1>Materialize</h1>
+            </Flex>
+            <Flex flexDirection="column" alignItems="center">
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50px"
                 as={DiReact}
               />
               <h1>React</h1>
@@ -165,6 +178,26 @@ const About = () => {
                 as={SiFirebase}
               />
               <h1>Firebase</h1>
+            </Flex>
+            <Flex flexDirection="column" alignItems="center">
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50px"
+                as={FaGit}
+              />
+              <h1>Git</h1>
+            </Flex>
+            <Flex flexDirection="column" alignItems="center">
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50px"
+                as={DiNpm}
+              />
+              <h1>Npm</h1>
             </Flex>
           </Grid>
         </Box>

@@ -24,15 +24,27 @@ const Contact = () => {
         flexDirection="column"
         justifyContent="center"
         id="form"
-        my="5rem"
+        my="2rem"
         minH="100vh"
         position="relative"
       >
         <h1 className="subtitle fancy">
           <span>
-            <Text fontSize="50px">contacts</Text>
+            <Text fontSize="40px">contacts</Text>
           </span>
         </h1>
+
+        <Box my={4}>
+          <Text textAlign="center">
+            I'm currently looking for an entry level-job in web dev.
+          </Text>
+          <Text textAlign="center">
+            Feel free to <span className="colorSpan">drop a message </span> or{" "}
+            <span className="colorSpan">connect</span> with me on social media
+            pages.
+          </Text>
+        </Box>
+
         <form
           action="mailto:arm.guarino@gmail.com"
           method="POST"
@@ -51,7 +63,7 @@ const Contact = () => {
 
             <FormControl id="message">
               <FormLabel>Message</FormLabel>
-              <Textarea placeholder="Enter your message here..." required />
+              <Textarea required />
             </FormControl>
 
             <Button
@@ -74,9 +86,8 @@ const Contact = () => {
             <Link href="https://twitter.com/_guarmo" target="_blank">
               <Icon
                 transition="all .2s ease-in-out"
-                _hover={{ transform: "scale(1.2)" }}
+                _hover={{ transform: "scale(1.2)", color: "#00838d" }}
                 transition="all .2s ease-in-out"
-                _hover={{ transform: "scale(1.2)" }}
                 w={10}
                 h={10}
                 as={AiOutlineTwitter}
@@ -88,7 +99,7 @@ const Contact = () => {
             >
               <Icon
                 transition="all .2s ease-in-out"
-                _hover={{ transform: "scale(1.2)" }}
+                _hover={{ transform: "scale(1.2)", color: "#00838d" }}
                 w={10}
                 h={10}
                 as={AiFillLinkedin}
@@ -97,14 +108,17 @@ const Contact = () => {
             <Link href="https://github.com/guarmo" target="_blank">
               <Icon
                 transition="all .2s ease-in-out"
-                _hover={{ transform: "scale(1.2)" }}
+                _hover={{ transform: "scale(1.2)", color: "#00838d" }}
                 w={10}
                 h={10}
                 as={AiFillGithub}
               />
             </Link>
           </HStack>
-          <Text>Designed and Coded by Armando Guarino</Text>
+          <Text my="4" textAlign="center">
+            Designed and Coded by{" "}
+            <span className="colorSpan">Armando Guarino</span>
+          </Text>
         </Box>
       </Flex>
     </>
