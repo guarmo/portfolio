@@ -12,6 +12,7 @@
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "axios": "^0.21.1",
+    "emailjs-com": "^2.6.4",
     "framer-motion": "^3.10.3",
     "next": "10.0.8",
     "react": "17.0.1",

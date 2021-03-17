@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Button,
   Flex,
@@ -11,12 +12,61 @@ import {
   Link,
   Box,
   HStack,
+  BeatLoader,
 } from "@chakra-ui/react";
+
+import emailjs from "emailjs-com";
 
 import { AiOutlineTwitter, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
+  const [sendEmail, setSendEmail] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const { name, email, message } = sendEmail;
+
+  const onChange = (e) =>
+    setSendEmail({ ...sendEmail, [e.target.name]: e.target.value });
+
+  const onFormSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // await emailjs
+    //   .send(
+    //     "service_f0yxx3l",
+    //     "template_ac2n19y",
+    //     sendEmail,
+    //     "user_mFKy74qndZlfDQh6mnohG"
+    //   )
+    //   .then(
+    //     (response) => {
+    //       console.log("SUCCESS!", response.status, response.text);
+    //     },
+    //     (err) => {
+    //       console.log("FAILED...", err);
+    //     }
+    //   );
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    setSendEmail({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+    console.log(sendEmail);
+  };
+
   /* Contact */
   return (
     <>
@@ -40,32 +90,45 @@ const Contact = () => {
           </Text>
           <Text textAlign="center">
             Feel free to <span className="colorSpan">drop a message </span> or{" "}
-            <span className="colorSpan">connect</span> with me on social media
-            pages.
+            <span className="colorSpan">connect</span> with me on social media.
           </Text>
         </Box>
 
-        <form
-          action="mailto:arm.guarino@gmail.com"
-          method="POST"
-          enctpye="multipart/form-data"
-        >
+        <form onSubmit={(e) => onFormSubmit(e)}>
           <VStack spacing="10px">
             <FormControl id="name">
               <FormLabel>Name</FormLabel>
-              <Input type="text" required />
+              <Input
+                type="text"
+                name="name"
+                value={name}
+                onChange={onChange}
+                required
+              />
             </FormControl>
 
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
-              <Input type="email" required />
+              <Input
+                type="email"
+                name="email"
+                value={email}
+                onChange={onChange}
+                required
+              />
             </FormControl>
 
             <FormControl id="message">
               <FormLabel>Message</FormLabel>
-              <Textarea required />
+              <Textarea
+                name="message"
+                value={message}
+                onChange={onChange}
+                required
+              />
             </FormControl>
-
+          </VStack>
+          {!loading ? (
             <Button
               type="submit"
               rightIcon={<IoIosSend />}
@@ -73,8 +136,17 @@ const Contact = () => {
             >
               Send
             </Button>
-          </VStack>
+          ) : (
+            <Button
+              isLoading
+              rightIcon={<IoIosSend />}
+              backgroundColor="#00838d"
+            >
+              Send{" "}
+            </Button>
+          )}
         </form>
+
         <Box
           position="absolute"
           bottom="0"

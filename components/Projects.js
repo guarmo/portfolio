@@ -26,6 +26,23 @@ const Projects = () => {
             <Text fontSize="40px">projects</Text>
           </span>
         </h1>
+
+        <Box textAlign="center" my={4}>
+          <Text>Here's a list of projects I worked on lately.</Text>
+          <Text>
+            Check out my{" "}
+            <Link
+              color="#00838d !important"
+              href="https://github.com/guarmo"
+              target="_blank"
+            >
+              Github
+            </Link>{" "}
+            to see more.
+            {/* @todo */}
+          </Text>
+        </Box>
+
         <Grid
           templateColumns={{
             md: "repeat(3, 1fr)",
