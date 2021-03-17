@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -15,6 +19,7 @@ a {
 
 .logo {
   font-size: 35px;
+  font-family: Fascinate !important;
 }
 
 html {
@@ -104,7 +109,7 @@ body {
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   top: 0;
-  width: 100vw;
+  width: 100%;
 }
 .fancy span:before {
   right: 100%;

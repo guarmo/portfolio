@@ -42,8 +42,8 @@ const About = () => {
             <span color="red">technologies</span> I use:{" "}
           </p>
           <Grid
-            my={4}
-            templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
+            my={10}
+            templateColumns={{ base: "repeat(3, 1fr)", md: "repeat(4, 1fr)" }}
             gap={6}
           >
             <Flex flexDirection="column" alignItems="center">

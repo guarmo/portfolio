@@ -9,6 +9,8 @@ import {
   Icon,
   Text,
   Link,
+  Box,
+  HStack,
 } from "@chakra-ui/react";
 
 import { AiOutlineTwitter, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
@@ -24,6 +26,7 @@ const Contact = () => {
         id="form"
         my="5rem"
         minH="100vh"
+        position="relative"
       >
         <h1 className="subtitle fancy">
           <span>
@@ -60,36 +63,50 @@ const Contact = () => {
             </Button>
           </VStack>
         </form>
+        <Box
+          position="absolute"
+          bottom="0"
+          spacing="10px"
+          left="50%"
+          transform="translateX(-50%)"
+        >
+          <HStack justifyContent="center" w="100%">
+            <Link href="https://twitter.com/_guarmo" target="_blank">
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w={10}
+                h={10}
+                as={AiOutlineTwitter}
+              />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/armando-guarino/"
+              target="_blank"
+            >
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w={10}
+                h={10}
+                as={AiFillLinkedin}
+              />
+            </Link>
+            <Link href="https://github.com/guarmo" target="_blank">
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w={10}
+                h={10}
+                as={AiFillGithub}
+              />
+            </Link>
+          </HStack>
+          <Text>Designed and Coded by Armando Guarino</Text>
+        </Box>
       </Flex>
-      <Link href="https://twitter.com/_guarmo" target="_blank">
-        <Icon
-          transition="all .2s ease-in-out"
-          _hover={{ transform: "scale(1.2)" }}
-          transition="all .2s ease-in-out"
-          _hover={{ transform: "scale(1.2)" }}
-          w={10}
-          h={10}
-          as={AiOutlineTwitter}
-        />
-      </Link>
-      <Link href="https://www.linkedin.com/in/armando-guarino/" target="_blank">
-        <Icon
-          transition="all .2s ease-in-out"
-          _hover={{ transform: "scale(1.2)" }}
-          w={10}
-          h={10}
-          as={AiFillLinkedin}
-        />
-      </Link>
-      <Link href="https://github.com/guarmo" target="_blank">
-        <Icon
-          transition="all .2s ease-in-out"
-          _hover={{ transform: "scale(1.2)" }}
-          w={10}
-          h={10}
-          as={AiFillGithub}
-        />
-      </Link>
     </>
   );
 };
