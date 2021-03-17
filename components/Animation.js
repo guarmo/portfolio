@@ -54,7 +54,7 @@ class Animation extends Component {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#00838d",
             },
             links: {
               color: "#ffffff",

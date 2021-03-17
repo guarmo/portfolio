@@ -8,9 +8,11 @@ import {
   VStack,
   Icon,
   Text,
+  Link,
 } from "@chakra-ui/react";
 
 import { AiOutlineTwitter, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
   /* Contact */
@@ -20,6 +22,7 @@ const Contact = () => {
         flexDirection="column"
         justifyContent="center"
         id="form"
+        my="5rem"
         minH="100vh"
       >
         <h1 className="subtitle fancy">
@@ -27,30 +30,66 @@ const Contact = () => {
             <Text fontSize="50px">contacts</Text>
           </span>
         </h1>
-        <form>
+        <form
+          action="mailto:arm.guarino@gmail.com"
+          method="POST"
+          enctpye="multipart/form-data"
+        >
           <VStack spacing="10px">
-            <FormControl id="email">
+            <FormControl id="name">
               <FormLabel>Name</FormLabel>
-              <Input type="email" />
+              <Input type="text" required />
             </FormControl>
 
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <Input type="email" required />
             </FormControl>
 
-            <FormControl id="email">
+            <FormControl id="message">
               <FormLabel>Message</FormLabel>
-              <Textarea placeholder="Enter your message here..." />
+              <Textarea placeholder="Enter your message here..." required />
             </FormControl>
 
-            <Button colorScheme="blue">Button</Button>
+            <Button
+              type="submit"
+              rightIcon={<IoIosSend />}
+              backgroundColor="#00838d"
+            >
+              Send
+            </Button>
           </VStack>
         </form>
       </Flex>
-      <Icon w={10} h={10} as={AiOutlineTwitter} />
-      <Icon w={10} h={10} as={AiFillLinkedin} />
-      <Icon w={10} h={10} as={AiFillGithub} />
+      <Link href="https://twitter.com/_guarmo" target="_blank">
+        <Icon
+          transition="all .2s ease-in-out"
+          _hover={{ transform: "scale(1.2)" }}
+          transition="all .2s ease-in-out"
+          _hover={{ transform: "scale(1.2)" }}
+          w={10}
+          h={10}
+          as={AiOutlineTwitter}
+        />
+      </Link>
+      <Link href="https://www.linkedin.com/in/armando-guarino/" target="_blank">
+        <Icon
+          transition="all .2s ease-in-out"
+          _hover={{ transform: "scale(1.2)" }}
+          w={10}
+          h={10}
+          as={AiFillLinkedin}
+        />
+      </Link>
+      <Link href="https://github.com/guarmo" target="_blank">
+        <Icon
+          transition="all .2s ease-in-out"
+          _hover={{ transform: "scale(1.2)" }}
+          w={10}
+          h={10}
+          as={AiFillGithub}
+        />
+      </Link>
     </>
   );
 };

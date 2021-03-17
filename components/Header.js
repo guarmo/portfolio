@@ -29,16 +29,18 @@ const Header = () => {
         ></Link>
         <Box my={4}>
           <Text>I'm a</Text>
-          <Heading>Software Developer</Heading>
+          <Heading as="h1" size="xl" color="#00838d">
+            Software Developer
+          </Heading>
           <Text>
             interested in developing
             <Typewriter
               options={{
                 strings: [
                   "apps that bring social change.",
-                  "full-stack applications.",
                   "with open-source technologies.",
-                  "and deliver high quality products.",
+                  "full-stack applications.",
+                  "and delivering high quality products.",
                   "with agile methodologies.",
                 ],
                 autoStart: true,

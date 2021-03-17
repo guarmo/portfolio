@@ -44,6 +44,7 @@ const Navbar = () => {
               <Icon
                 cursor="pointer"
                 onClick={onClose}
+                _hover={{ color: "#00838d" }}
                 w={8}
                 h={8}
                 as={AiOutlineClose}
@@ -57,25 +58,25 @@ const Navbar = () => {
                 >
                   <VStack spacing="40px" fontWeight="bold">
                     <Link
-                      _hover={{ textDecoration: "underline", color: "red" }}
+                      _hover={{ textDecoration: "underline", color: "#00838d" }}
                       href="#top"
                     >
                       home.
                     </Link>
                     <Link
-                      _hover={{ textDecoration: "underline", color: "red" }}
+                      _hover={{ textDecoration: "underline", color: "#00838d" }}
                       href="#about"
                     >
                       about me.
                     </Link>
                     <Link
-                      _hover={{ textDecoration: "underline", color: "red" }}
+                      _hover={{ textDecoration: "underline", color: "#00838d" }}
                       href="#projects"
                     >
                       projects.
                     </Link>
                     <Link
-                      _hover={{ textDecoration: "underline", color: "red" }}
+                      _hover={{ textDecoration: "underline", color: "#00838d" }}
                       href="#form"
                     >
                       contact.
@@ -90,25 +91,25 @@ const Navbar = () => {
         <UnorderedList display={{ base: "none", md: "block" }}>
           <HStack spacing="10px" fontWeight="bold">
             <Link
-              _hover={{ textDecoration: "underline", color: "red" }}
+              _hover={{ textDecoration: "underline", color: "#00838d" }}
               href="#top"
             >
               home.
             </Link>
             <Link
-              _hover={{ textDecoration: "underline", color: "red" }}
+              _hover={{ textDecoration: "underline", color: "#00838d" }}
               href="#about"
             >
               about me.
             </Link>
             <Link
-              _hover={{ textDecoration: "underline", color: "red" }}
+              _hover={{ textDecoration: "underline", color: "#00838d" }}
               href="#projects"
             >
               projects.
             </Link>
             <Link
-              _hover={{ textDecoration: "underline", color: "red" }}
+              _hover={{ textDecoration: "underline", color: "#00838d" }}
               href="#form"
             >
               contact.

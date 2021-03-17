@@ -17,10 +17,11 @@ const Projects = () => {
         flexDirection="column"
         justifyContent="center"
         id="projects"
-        minH="100vh"
         position="relative"
+        minH="100vh"
+        pt="5rem"
       >
-        <h1 className="subtitle fancy">
+        <h1 mt="30rem" className="subtitle fancy">
           <span>
             <Text fontSize="50px">projects</Text>
           </span>

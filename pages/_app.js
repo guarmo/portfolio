@@ -8,7 +8,7 @@ const theme = extendTheme({
   fonts: {
     body: "Roboto Mono",
     heading: "Roboto Mono",
-    paragraph: "Roboto Slab",
+    // heading: "Roboto Slab",
   },
 });
 
