@@ -1,4 +1,4 @@
-import { Flex, Box, Link } from "@chakra-ui/react";
+import { Flex, Box, Link, Heading, Text } from "@chakra-ui/react";
 import Animation from "../components/Animation";
 import Typewriter from "typewriter-effect";
 
@@ -28,20 +28,24 @@ const Header = () => {
           data-ca3_icon=""
         ></Link>
         <Box my={4}>
-          <h1>Full-stack Software Developer.</h1>
-          <p>
-            Interested in developing
+          <Text>I'm a</Text>
+          <Heading>Software Developer</Heading>
+          <Text>
+            interested in developing
             <Typewriter
               options={{
                 strings: [
                   "apps that bring social change.",
                   "full-stack applications.",
+                  "with open-source technologies.",
+                  "and deliver high quality products.",
+                  "with agile methodologies.",
                 ],
                 autoStart: true,
                 loop: true,
               }}
             />
-          </p>
+          </Text>
         </Box>
       </Flex>
       <Box minW="50%" mt={20}>
