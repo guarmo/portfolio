@@ -56,10 +56,30 @@ const Navbar = () => {
                   h="100%"
                 >
                   <VStack spacing="40px" fontWeight="bold">
-                    <Link href="#top">home.</Link>
-                    <Link href="#about">about me.</Link>
-                    <Link href="#projects">projects.</Link>
-                    <Link href="#form">contact.</Link>
+                    <Link
+                      _hover={{ textDecoration: "underline", color: "red" }}
+                      href="#top"
+                    >
+                      home.
+                    </Link>
+                    <Link
+                      _hover={{ textDecoration: "underline", color: "red" }}
+                      href="#about"
+                    >
+                      about me.
+                    </Link>
+                    <Link
+                      _hover={{ textDecoration: "underline", color: "red" }}
+                      href="#projects"
+                    >
+                      projects.
+                    </Link>
+                    <Link
+                      _hover={{ textDecoration: "underline", color: "red" }}
+                      href="#form"
+                    >
+                      contact.
+                    </Link>
                   </VStack>
                 </Flex>
               </DrawerBody>
@@ -69,10 +89,30 @@ const Navbar = () => {
         <h1 className="logo">ag</h1>
         <UnorderedList display={{ base: "none", md: "block" }}>
           <HStack spacing="10px" fontWeight="bold">
-            <Link href="#top">home.</Link>
-            <Link href="#about">about me.</Link>
-            <Link href="#projects">projects.</Link>
-            <Link href="#form">contact.</Link>
+            <Link
+              _hover={{ textDecoration: "underline", color: "red" }}
+              href="#top"
+            >
+              home.
+            </Link>
+            <Link
+              _hover={{ textDecoration: "underline", color: "red" }}
+              href="#about"
+            >
+              about me.
+            </Link>
+            <Link
+              _hover={{ textDecoration: "underline", color: "red" }}
+              href="#projects"
+            >
+              projects.
+            </Link>
+            <Link
+              _hover={{ textDecoration: "underline", color: "red" }}
+              href="#form"
+            >
+              contact.
+            </Link>
           </HStack>
         </UnorderedList>
         <Button onClick={toggleColorMode}>

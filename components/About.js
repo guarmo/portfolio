@@ -22,13 +22,6 @@ const About = () => {
         id="about"
         minH="100vh"
       >
-        <Link
-          href="#projects"
-          className="ca3-scroll-down-link ca3-scroll-down-arrow"
-          data-ca3_iconfont="ETmodules"
-          data-ca3_icon=""
-        ></Link>
-
         <h1 className="subtitle fancy">
           <span>
             <Text fontSize="50px">about me</Text>
@@ -45,35 +38,83 @@ const About = () => {
             gap={6}
           >
             <Flex flexDirection="column" alignItems="center">
-              <Icon w="100%" h="50" as={AiFillHtml5} />
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50"
+                as={AiFillHtml5}
+              />
               <h1>HTML5</h1>
             </Flex>
             <Flex flexDirection="column" alignItems="center">
-              <Icon w="100%" h="50" as={DiCss3} />
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50"
+                as={DiCss3}
+              />
               <h1>CSS3</h1>
             </Flex>
             <Flex flexDirection="column" alignItems="center">
-              <Icon w="100%" h="50" as={DiJavascript} />
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50"
+                as={DiJavascript}
+              />
               <h1>JavaScript</h1>
             </Flex>
             <Flex flexDirection="column" alignItems="center">
-              <Icon w="100%" h="50" as={SiTailwindcss} />
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50"
+                as={SiTailwindcss}
+              />
               <h1>TailwindCSS</h1>
             </Flex>
             <Flex flexDirection="column" alignItems="center">
-              <Icon w="100%" h="50" as={DiBootstrap} />
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50"
+                as={DiBootstrap}
+              />
               <h1>Bootstrap</h1>
             </Flex>
             <Flex flexDirection="column" alignItems="center">
-              <Icon w="100%" h="50" as={DiReact} />
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50"
+                as={DiReact}
+              />
               <h1>React</h1>
             </Flex>
             <Flex flexDirection="column" alignItems="center">
-              <Icon w="100%" h="50" as={SiRedux} />
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50"
+                as={SiRedux}
+              />
               <h1>Redux</h1>
             </Flex>
             <Flex flexDirection="column" alignItems="center">
-              <Icon w="100%" h="50" as={DiMongodb} />
+              <Icon
+                transition="all .2s ease-in-out"
+                _hover={{ transform: "scale(1.2)" }}
+                w="100%"
+                h="50"
+                as={DiMongodb}
+              />
               <h1>MongoDB</h1>
             </Flex>
           </Grid>

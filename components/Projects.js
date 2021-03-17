@@ -29,13 +29,6 @@ const Projects = () => {
           <Box w="100%" h="200" border=" 2px solid gray" />
           <Box w="100%" h="200" border=" 2px solid gray" />
         </Grid>
-
-        <Link
-          href="#form"
-          className="ca3-scroll-down-link ca3-scroll-down-arrow"
-          data-ca3_iconfont="ETmodules"
-          data-ca3_icon=""
-        ></Link>
       </Flex>
     </>
   );
