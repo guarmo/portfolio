@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 
 export default function Home() {
   return (
-    <Container maxW="container.lg" mt={4}>
+    <Container px="2rem" maxW="container.lg">
       <Header />
       <About />
       <Projects />

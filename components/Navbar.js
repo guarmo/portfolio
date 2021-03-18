@@ -14,12 +14,10 @@ import {
   DrawerBody,
   useDisclosure,
 } from "@chakra-ui/react";
-// import { FaMoon, FaRegMoon } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-  // const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [placement, setPlacement] = React.useState("left");
 
@@ -114,13 +112,6 @@ const Navbar = () => {
             </Link>
           </HStack>
         </UnorderedList>
-        {/* <Button onClick={toggleColorMode}>
-          {colorMode === "light" ? (
-            <Icon as={FaRegMoon} />
-          ) : (
-            <Icon as={FaMoon} />
-          )}
-        </Button> */}
       </Flex>
     </nav>
   );

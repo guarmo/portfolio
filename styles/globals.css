@@ -95,7 +95,7 @@ body {
 
 /* main-h */
 .subtitle {
-  margin: 0 0 10rem 0;
+  margin-top: 2rem;
 }
 .fancy {
   line-height: 0;
@@ -113,7 +113,7 @@ body {
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 .fancy span:before {
   right: 100%;

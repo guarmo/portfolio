@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Button,
   Flex,
@@ -13,6 +13,7 @@ import {
   Box,
   HStack,
   BeatLoader,
+  createStandaloneToast,
 } from "@chakra-ui/react";
 
 import emailjs from "emailjs-com";
@@ -27,6 +28,8 @@ const Contact = () => {
     message: "",
   });
 
+  const toast = createStandaloneToast();
+
   const [loading, setLoading] = useState(false);
 
   const { name, email, message } = sendEmail;
@@ -38,62 +41,68 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // await emailjs
-    //   .send(
-    //     "service_f0yxx3l",
-    //     "template_ac2n19y",
-    //     sendEmail,
-    //     "user_mFKy74qndZlfDQh6mnohG"
-    //   )
-    //   .then(
-    //     (response) => {
-    //       console.log("SUCCESS!", response.status, response.text);
-    //     },
-    //     (err) => {
-    //       console.log("FAILED...", err);
-    //     }
-    //   );
+    await emailjs
+      .send(
+        "service_f0yxx3l",
+        "template_ac2n19y",
+        sendEmail,
+        "user_mFKy74qndZlfDQh6mnohG"
+      )
+      .then(
+        (response) => {
+          toast({
+            title: "Message sent.",
+            description: "Thanks for getting in touch!",
+            status: "success",
+            duration: 4000,
+            isClosable: true,
+          });
+        },
+        (err) => {
+          toast({
+            title: "Oops.",
+            description: "Something went wrong!",
+            status: "error",
+            duration: 4000,
+            isClosable: true,
+          });
+        }
+      );
 
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+    setLoading(false);
 
     setSendEmail({
       name: "",
       email: "",
       message: "",
     });
-
-    console.log(sendEmail);
   };
 
-  /* Contact */
   return (
-    <>
-      <Flex
-        flexDirection="column"
-        justifyContent="center"
-        id="form"
-        my="2rem"
-        minH="100vh"
-        position="relative"
-      >
-        <h1 className="subtitle fancy">
-          <span>
-            <Text fontSize="40px">contacts</Text>
-          </span>
-        </h1>
+    <Flex
+      flexDirection="column"
+      id="form"
+      minH="100vh"
+      py={6}
+      position="relative"
+    >
+      <h1 className="subtitle fancy">
+        <span>
+          <Text fontSize="40px">contacts</Text>
+        </span>
+      </h1>
 
-        <Box my={4}>
-          <Text textAlign="center">
-            I'm currently looking for an entry level-job in web dev.
-          </Text>
-          <Text textAlign="center">
-            Feel free to <span className="colorSpan">drop a message </span> or{" "}
-            <span className="colorSpan">connect</span> with me on social media.
-          </Text>
-        </Box>
+      <Box textAlign="center" mt={12}>
+        <Text>
+          I'm currently looking for an entry-level web development role.
+        </Text>
+        <Text>
+          Feel free to <span className="colorSpan">drop a message </span> or{" "}
+          <span className="colorSpan">connect</span> with me on social media.
+        </Text>
+      </Box>
 
+      <Box my="auto">
         <form onSubmit={(e) => onFormSubmit(e)}>
           <VStack spacing="10px">
             <FormControl id="name">
@@ -133,6 +142,8 @@ const Contact = () => {
               type="submit"
               rightIcon={<IoIosSend />}
               backgroundColor="#00838d"
+              ml="50%"
+              transform="translateX(-50%)"
             >
               Send
             </Button>
@@ -146,54 +157,48 @@ const Contact = () => {
             </Button>
           )}
         </form>
+      </Box>
 
-        <Box
-          position="absolute"
-          bottom="0"
-          spacing="10px"
-          left="50%"
-          transform="translateX(-50%)"
-        >
-          <HStack justifyContent="center" w="100%">
-            <Link href="https://twitter.com/_guarmo" target="_blank">
-              <Icon
-                transition="all .2s ease-in-out"
-                _hover={{ transform: "scale(1.2)", color: "#00838d" }}
-                transition="all .2s ease-in-out"
-                w={10}
-                h={10}
-                as={AiOutlineTwitter}
-              />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/armando-guarino/"
-              target="_blank"
-            >
-              <Icon
-                transition="all .2s ease-in-out"
-                _hover={{ transform: "scale(1.2)", color: "#00838d" }}
-                w={10}
-                h={10}
-                as={AiFillLinkedin}
-              />
-            </Link>
-            <Link href="https://github.com/guarmo" target="_blank">
-              <Icon
-                transition="all .2s ease-in-out"
-                _hover={{ transform: "scale(1.2)", color: "#00838d" }}
-                w={10}
-                h={10}
-                as={AiFillGithub}
-              />
-            </Link>
-          </HStack>
-          <Text my="4" textAlign="center">
-            Designed and Coded by{" "}
-            <span className="colorSpan">Armando Guarino</span>
-          </Text>
-        </Box>
-      </Flex>
-    </>
+      <Box mx="auto" spacing="10px">
+        <HStack justifyContent="center" w="100%">
+          <Link href="https://twitter.com/_guarmo" target="_blank">
+            <Icon
+              transition="all .2s ease-in-out"
+              _hover={{ transform: "scale(1.2)", color: "#00838d" }}
+              transition="all .2s ease-in-out"
+              w={10}
+              h={10}
+              as={AiOutlineTwitter}
+            />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/armando-guarino/"
+            target="_blank"
+          >
+            <Icon
+              transition="all .2s ease-in-out"
+              _hover={{ transform: "scale(1.2)", color: "#00838d" }}
+              w={10}
+              h={10}
+              as={AiFillLinkedin}
+            />
+          </Link>
+          <Link href="https://github.com/guarmo" target="_blank">
+            <Icon
+              transition="all .2s ease-in-out"
+              _hover={{ transform: "scale(1.2)", color: "#00838d" }}
+              w={10}
+              h={10}
+              as={AiFillGithub}
+            />
+          </Link>
+        </HStack>
+        <Text my={2} textAlign="center">
+          Designed and Coded by{" "}
+          <span className="colorSpan">Armando Guarino</span>
+        </Text>
+      </Box>
+    </Flex>
   );
 };
 
