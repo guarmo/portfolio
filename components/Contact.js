@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   Button,
   Flex,
@@ -43,10 +43,10 @@ const Contact = () => {
 
     await emailjs
       .send(
-        "service_f0yxx3l",
-        "template_ac2n19y",
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         sendEmail,
-        "user_mFKy74qndZlfDQh6mnohG"
+        process.env.NEXT_PUBLIC_USER_ID
       )
       .then(
         (response) => {
@@ -152,6 +152,8 @@ const Contact = () => {
               isLoading
               rightIcon={<IoIosSend />}
               backgroundColor="#00838d"
+              ml="50%"
+              transform="translateX(-50%)"
             >
               Send{" "}
             </Button>
