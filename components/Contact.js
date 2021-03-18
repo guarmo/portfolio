@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Button,
   Flex,
@@ -43,10 +43,10 @@ const Contact = () => {
 
     await emailjs
       .send(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        "service_f0yxx3l",
+        "template_ac2n19y",
         sendEmail,
-        process.env.NEXT_PUBLIC_USER_ID
+        "user_mFKy74qndZlfDQh6mnohG"
       )
       .then(
         (response) => {
