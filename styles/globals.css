@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 a {
@@ -15,6 +19,7 @@ a {
 
 .logo {
   font-size: 35px;
+  font-family: Fascinate !important;
 }
 
 html {
@@ -24,6 +29,99 @@ html {
 
 body {
   margin: 0;
+}
+
+.colorSpan {
+  color: #00838d;
+}
+
+/* Cards */
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 4px 0 32px;
+}
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+.card {
+  display: block;
+  position: relative;
+  max-width: 262px;
+  background-color: #171923;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: #00838d;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+.card:hover:before {
+  transform: scale(21);
+}
+.card:hover p {
+  transition: all 0.3s ease-out;
+  color: rgba(255, 255, 255, 0.8);
+}
+.card:hover h3 {
+  transition: all 0.3s ease-out;
+  color: #ffffff;
+}
+
+/* main-h */
+.subtitle {
+  margin-top: 2rem;
+}
+.fancy {
+  line-height: 0;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  top: 0;
+  width: 100vw;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
 }
 
 /* Scroll icon */
@@ -44,10 +142,11 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .ca3-scroll-down-link {
   cursor: pointer;
   height: 20px;
-  width: 40px;
-  margin: 0px 0 0 -20px;
+  width: 20px;
+  margin: 0px 0 -20px 0;
   line-height: 60px;
   position: absolute;
+
   left: 50%;
   bottom: 40px;
   color: #fff;

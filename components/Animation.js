@@ -9,15 +9,8 @@ class Animation extends Component {
     this.particlesLoaded = this.particlesLoaded.bind(this);
   }
 
-  particlesInit(main) {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  }
-
-  particlesLoaded(container) {
-    console.log(container);
-  }
+  particlesInit(main) {}
+  particlesLoaded(container) {}
 
   render() {
     return (
@@ -54,7 +47,7 @@ class Animation extends Component {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#00838d",
             },
             links: {
               color: "#ffffff",
