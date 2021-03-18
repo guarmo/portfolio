@@ -39,7 +39,7 @@ const About = () => {
       <Box my="auto" textAlign="center" my={12}>
         <Text>I'm an italian Software Developer based in Berlin.</Text>
         <Text>
-          I develop in JavaScript and these are the main
+          I develop in JavaScript and these are the main{" "}
           <span className="colorSpan">technologies</span> I use:{" "}
         </Text>
       </Box>
@@ -47,7 +47,11 @@ const About = () => {
       <Box my="auto">
         <Grid
           my={10}
-          templateColumns={{ base: "repeat(3, 1fr)", md: "repeat(4, 1fr)" }}
+          templateColumns={{
+            base: "repeat(2, 1fr)",
+            sm: "repeat(3, 1fr)",
+            md: "repeat(4, 1fr)",
+          }}
           gap={6}
         >
           <Flex flexDirection="column" alignItems="center">
