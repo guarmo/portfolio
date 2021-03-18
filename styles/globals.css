@@ -201,3 +201,10 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     opacity: 0;
   }
 }
+
+/* Media query landscape mode */
+@media only screen and (min-device-width: 480px) and (max-device-width: 640px) and (orientation: landscape) {
+  .head-flex {
+    height: initial !important;
+  }
+}

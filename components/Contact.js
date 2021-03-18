@@ -102,7 +102,7 @@ const Contact = () => {
         </Text>
       </Box>
 
-      <Box my="auto">
+      <Box my="auto" py={6}>
         <form onSubmit={(e) => onFormSubmit(e)}>
           <VStack spacing="10px">
             <FormControl id="name">

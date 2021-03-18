@@ -8,6 +8,7 @@ const Header = () => {
     <Box h="100vh" pb={4}>
       <Navbar w="100%" />
       <Flex
+        className="head-flex"
         position="relative"
         flexDirection={{ base: "column", md: "row" }}
         h="95%"
@@ -51,7 +52,7 @@ const Header = () => {
             </Text>
           </Box>
         </Flex>
-        <Box cursor="pointer" minW="50%" mt={20}>
+        <Box className="animation" cursor="pointer" minW="50%" mt={20}>
           <Animation width="100%" />
         </Box>
       </Flex>
