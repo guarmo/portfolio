@@ -26,11 +26,11 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Armando Guarino | Portfolio" />
         <meta name="twitter:card" content="summary" />
+        <meta property="og:image" content="https://pasteboard.co/JTOsPz6.png" />
         <meta
           property="og:description"
           content="Armando Guarino's personal portfolio."
         />
-        <meta property="og:image" content="https://ibb.co/yYhBmbN" />
       </Head>
       <Container px="2rem" maxW="container.lg">
         <Header />
