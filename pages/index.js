@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Armando Guarino | Portfolio</title>
-        <meta charset="UTF-8" />
+        {/* <meta charset="UTF-8" />
         <meta
           name="description"
           content="Armando Guarino's personal portfolio."
@@ -21,7 +21,7 @@ export default function Home() {
           content="Armando Guarino, guarino, guarmo, portfolio"
         />
         <meta name="author" content="Armando Guarino" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
         <meta property="og:url" content="https://www.armandoguarino.dev/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Armando Guarino | Portfolio" />
