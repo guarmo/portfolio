@@ -30,7 +30,7 @@ export default function Home() {
           property="og:description"
           content="Armando Guarino's personal portfolio."
         />
-        <meta property="og:image" content={"https://ibb.co/yYhBmbN"} />
+        <meta property="og:image" content="https://ibb.co/yYhBmbN" />
       </Head>
       <Container px="2rem" maxW="container.lg">
         <Header />
