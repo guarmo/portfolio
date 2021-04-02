@@ -22,6 +22,10 @@ a {
 .logo {
   font-size: 35px;
   font-family: Fascinate !important;
+  transition: transform 0.7s ease-in-out;
+}
+.logo:hover {
+  transform: rotate(360deg);
 }
 
 html {
