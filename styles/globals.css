@@ -60,6 +60,8 @@ body {
   margin-right: -4px;
   color: white;
   font-family: courier, sans;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 .card {
   display: block;

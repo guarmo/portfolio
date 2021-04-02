@@ -61,18 +61,18 @@ const Projects = () => {
                 <Badge colorScheme="teal">Chakra UI</Badge>
               </HStack>
             </Box>
-            <Flex>
-              <Link
-                ml="4"
-                href="https://github.com/guarmo/portfolio"
-                target="_blank"
-              >
-                Code
-              </Link>
-            </Flex>
+            <Link href="https://github.com/guarmo/portfolio" target="_blank">
+              Code
+            </Link>
           </Flex>
           <Box className="go-corner">
-            <Box className="go-arrow">→</Box>
+            <Link
+              className="go-arrow"
+              href="https://www.armandoguarino.dev/"
+              target="_blank"
+            >
+              →
+            </Link>
           </Box>
         </Box>
 
@@ -94,24 +94,22 @@ const Projects = () => {
                 <Badge colorScheme="red">Express</Badge>
               </HStack>
             </Box>
-            <Flex>
-              <Link
-                href="https://secret-badlands-45247.herokuapp.com/"
-                target="_blank"
-              >
-                Live
-              </Link>
-              <Link
-                ml="4"
-                href="https://github.com/guarmo/DevChallenges/tree/main/my-unsplash"
-                target="_blank"
-              >
-                Code
-              </Link>
-            </Flex>
+
+            <Link
+              href="https://github.com/guarmo/DevChallenges/tree/main/my-unsplash"
+              target="_blank"
+            >
+              Code
+            </Link>
           </Flex>
           <Box className="go-corner">
-            <Box className="go-arrow">→</Box>
+            <Link
+              className="go-arrow"
+              href="https://secret-badlands-45247.herokuapp.com/"
+              target="_blank"
+            >
+              →
+            </Link>
           </Box>
         </Box>
 
@@ -129,24 +127,22 @@ const Projects = () => {
                 <Badge colorScheme="purple">React</Badge>
               </HStack>
             </Box>
-            <Flex>
-              <Link
-                href="https://hardcore-shirley-3a9287.netlify.app/"
-                target="_blank"
-              >
-                Live
-              </Link>
-              <Link
-                ml="4"
-                href="https://github.com/guarmo/DevChallenges/tree/main/image-uploader"
-                target="_blank"
-              >
-                Code
-              </Link>
-            </Flex>
+
+            <Link
+              href="https://github.com/guarmo/DevChallenges/tree/main/image-uploader"
+              target="_blank"
+            >
+              Code
+            </Link>
           </Flex>
           <Box className="go-corner">
-            <Box className="go-arrow">→</Box>
+            <Link
+              className="go-arrow"
+              href="https://hardcore-shirley-3a9287.netlify.app/"
+              target="_blank"
+            >
+              →
+            </Link>
           </Box>
         </Box>
 
@@ -164,24 +160,21 @@ const Projects = () => {
                 <Badge colorScheme="purple">React</Badge>
               </HStack>
             </Box>
-            <Flex>
-              <Link
-                href="https://auth-app-ddcb3.firebaseapp.com"
-                target="_blank"
-              >
-                Live
-              </Link>
-              <Link
-                ml="4"
-                href="https://github.com/guarmo/DevChallenges/tree/main/Auth-app"
-                target="_blank"
-              >
-                Code
-              </Link>
-            </Flex>
+            <Link
+              href="https://github.com/guarmo/DevChallenges/tree/main/Auth-app"
+              target="_blank"
+            >
+              Code
+            </Link>
           </Flex>
           <Box className="go-corner">
-            <Box className="go-arrow">→</Box>
+            <Link
+              className="go-arrow"
+              href="https://auth-app-ddcb3.firebaseapp.com"
+              target="_blank"
+            >
+              →
+            </Link>
           </Box>
         </Box>
 
@@ -199,24 +192,21 @@ const Projects = () => {
                 <Badge colorScheme="red">Geocoding</Badge>
               </HStack>
             </Box>
-            <Flex>
-              <Link
-                href="https://condescending-tereshkova-919a58.netlify.app/"
-                target="_blank"
-              >
-                Live
-              </Link>
-              <Link
-                ml="4"
-                href="https://github.com/guarmo/100-days-of-code/tree/master/Day5-IP-address-tracker"
-                target="_blank"
-              >
-                Code
-              </Link>
-            </Flex>
+            <Link
+              href="https://github.com/guarmo/100-days-of-code/tree/master/Day5-IP-address-tracker"
+              target="_blank"
+            >
+              Code
+            </Link>
           </Flex>
           <Box className="go-corner">
-            <Box className="go-arrow">→</Box>
+            <Link
+              className="go-arrow"
+              href="https://condescending-tereshkova-919a58.netlify.app/"
+              target="_blank"
+            >
+              →
+            </Link>
           </Box>
         </Box>
 
@@ -237,24 +227,22 @@ const Projects = () => {
                 <Badge colorScheme="gray">Responsive</Badge>
               </HStack>
             </Box>
-            <Flex>
-              <Link
-                href="https://upbeat-johnson-cb01e2.netlify.app/"
-                target="_blank"
-              >
-                Live
-              </Link>
-              <Link
-                ml="4"
-                href="https://github.com/guarmo/100-days-of-code/tree/master/Day62-url-shortening-final"
-                target="_blank"
-              >
-                Code
-              </Link>
-            </Flex>
+
+            <Link
+              href="https://github.com/guarmo/100-days-of-code/tree/master/Day62-url-shortening-final"
+              target="_blank"
+            >
+              Code
+            </Link>
           </Flex>
           <Box className="go-corner">
-            <Box className="go-arrow">→</Box>
+            <Link
+              className="go-arrow"
+              href="https://upbeat-johnson-cb01e2.netlify.app/"
+              target="_blank"
+            >
+              →
+            </Link>
           </Box>
         </Box>
 
@@ -275,24 +263,22 @@ const Projects = () => {
                 <Badge colorScheme="gray">Responsive</Badge>
               </HStack>
             </Box>
-            <Flex>
-              <Link
-                href="https://pedantic-kepler-2fe6c3.netlify.app/"
-                target="_blank"
-              >
-                Live
-              </Link>
-              <Link
-                ml="4"
-                href="https://github.com/guarmo/Eye-for-UI/tree/master/rest-countries-api-with-color-theme-switcher-master"
-                target="_blank"
-              >
-                Code
-              </Link>
-            </Flex>
+            <Link
+              ml="4"
+              href="https://github.com/guarmo/Eye-for-UI/tree/master/rest-countries-api-with-color-theme-switcher-master"
+              target="_blank"
+            >
+              Code
+            </Link>
           </Flex>
           <Box className="go-corner">
-            <Box className="go-arrow">→</Box>
+            <Link
+              className="go-arrow"
+              href="https://pedantic-kepler-2fe6c3.netlify.app/"
+              target="_blank"
+            >
+              →
+            </Link>
           </Box>
         </Box>
 
@@ -312,24 +298,22 @@ const Projects = () => {
                 <Badge colorScheme="gray">Responsive</Badge>
               </HStack>
             </Box>
-            <Flex>
-              <Link
-                href="https://quirky-jackson-e7e142.netlify.app/"
-                target="_blank"
-              >
-                Live
-              </Link>
-              <Link
-                ml="4"
-                href="https://github.com/guarmo/Eye-for-UI/tree/master/fylo-dark-theme-landing-page-master"
-                target="_blank"
-              >
-                Code
-              </Link>
-            </Flex>
+
+            <Link
+              href="https://github.com/guarmo/Eye-for-UI/tree/master/fylo-dark-theme-landing-page-master"
+              target="_blank"
+            >
+              Code
+            </Link>
           </Flex>
           <Box className="go-corner">
-            <Box className="go-arrow">→</Box>
+            <Link
+              className="go-arrow"
+              href="https://quirky-jackson-e7e142.netlify.app/"
+              target="_blank"
+            >
+              →
+            </Link>
           </Box>
         </Box>
 
@@ -340,31 +324,25 @@ const Projects = () => {
             justifyContent="space-between"
           >
             <Box>
-              <Heading size="lg">Insure</Heading>
-              <Text my="4">Insure landing page.</Text>
+              <Heading size="lg">CiccioFarro</Heading>
+              <Text my="4">Music producer's personal page.</Text>
               <HStack>
                 <Badge colorScheme="red">Layout</Badge>
                 <Badge colorScheme="gray">Responsive</Badge>
               </HStack>
             </Box>
-            <Flex>
-              <Link
-                href="https://inspiring-borg-4e02e6.netlify.app/"
-                target="_blank"
-              >
-                Live
-              </Link>
-              <Link
-                ml="4"
-                href="https://github.com/guarmo/Eye-for-UI/tree/master/insure-landing-page-master"
-                target="_blank"
-              >
-                Code
-              </Link>
-            </Flex>
+            <Link href="https://github.com/guarmo/cicciofarro" target="_blank">
+              Code
+            </Link>
           </Flex>
           <Box className="go-corner">
-            <Box className="go-arrow">→</Box>
+            <Link
+              className="go-arrow"
+              href="https:cicciofarro.com"
+              target="_blank"
+            >
+              →
+            </Link>
           </Box>
         </Box>
       </Grid>
