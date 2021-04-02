@@ -11,6 +11,7 @@ import {
   DiSass,
   DiMaterializecss,
   DiNpm,
+  DiGit,
 } from "react-icons/di";
 import {
   SiTailwindcss,
@@ -18,7 +19,7 @@ import {
   SiNextDotJs,
   SiFirebase,
 } from "react-icons/si";
-import { FaGit } from "react-icons/fa";
+import { FiFigma } from "react-icons/fi";
 
 const About = () => {
   return (
@@ -54,6 +55,16 @@ const About = () => {
           }}
           gap={6}
         >
+          <Flex flexDirection="column" alignItems="center">
+            <Icon
+              transition="all .2s ease-in-out"
+              _hover={{ transform: "scale(1.2)" }}
+              w="100%"
+              h="50px"
+              as={FiFigma}
+            />
+            <h1>Figma</h1>
+          </Flex>
           <Flex flexDirection="column" alignItems="center">
             <Icon
               transition="all .2s ease-in-out"
@@ -190,7 +201,7 @@ const About = () => {
               _hover={{ transform: "scale(1.2)" }}
               w="100%"
               h="50px"
-              as={FaGit}
+              as={DiGit}
             />
             <h1>Git</h1>
           </Flex>
