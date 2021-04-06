@@ -338,7 +338,7 @@ const Projects = () => {
           <Box className="go-corner">
             <Link
               className="go-arrow"
-              href="https:cicciofarro.com"
+              href="https://cicciofarro.com"
               target="_blank"
             >
               →
