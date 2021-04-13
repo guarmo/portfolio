@@ -34,6 +34,13 @@ const Contact = () => {
 
   const { name, email, message } = sendEmail;
 
+  const templateParams = {
+    from_name: name,
+    message,
+    to_name: "Armando Guarino",
+    reply_to: email,
+  };
+
   const onChange = (e) =>
     setSendEmail({ ...sendEmail, [e.target.name]: e.target.value });
 
@@ -45,7 +52,7 @@ const Contact = () => {
       .send(
         "service_f0yxx3l",
         "template_ac2n19y",
-        sendEmail,
+        templateParams,
         "user_mFKy74qndZlfDQh6mnohG"
       )
       .then(
