@@ -102,7 +102,7 @@ const Contact = () => {
         <Text>
           I'm currently working as a software developer at 
           <Link> 
-            <a href="https://berlin-byt.es/" target="_blank" className="colorSpan">Berlin Bytes</a>
+            <a href="https://berlin-byt.es/" target="_blank" className="colorSpan"> Berlin Bytes</a>
           </Link>.
         </Text>
         <Text>

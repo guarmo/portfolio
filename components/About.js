@@ -1,4 +1,4 @@
-import { Flex, Box, Icon, Grid, Text } from "@chakra-ui/react";
+import { Flex, Box, Icon, Grid, Text, Link, Button } from "@chakra-ui/react";
 
 import { AiFillHtml5 } from "react-icons/ai";
 import {
@@ -39,6 +39,17 @@ const About = () => {
 
       <Box my="auto" textAlign="center" my={12}>
         <Text>I'm an italian Software Developer based in Berlin.</Text>
+
+        <Box my="auto" textAlign="center" my={2}>
+        <Link mt={2} to="/CV.pdf" download target="_self">
+          <Button backgroundColor="#00838d">
+          <a href="/CV.pdf" download>
+            Download my CV
+          </a>
+          </Button>
+        </Link>
+        </Box>
+
         <Text>
           I develop in JavaScript and these are the main technologies I use:
         </Text>
