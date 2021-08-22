@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   Button,
   Flex,
@@ -12,7 +12,6 @@ import {
   Link,
   Box,
   HStack,
-  BeatLoader,
   createStandaloneToast,
 } from "@chakra-ui/react";
 
@@ -101,11 +100,14 @@ const Contact = () => {
 
       <Box textAlign="center" mt={12}>
         <Text>
-          I'm currently looking for an entry-level web development role.
+          I'm currently working as a software developer at 
+          <Link> 
+            <a href="https://berlin-byt.es/" target="_blank" className="colorSpan">Berlin Bytes</a>
+          </Link>.
         </Text>
         <Text>
-          Feel free to <span className="colorSpan">drop a message </span> or{" "}
-          <span className="colorSpan">connect</span> with me on social media.
+          Feel free to <span>drop a message </span> or{" "}
+          <span>connect</span> with me on social media.
         </Text>
       </Box>
 

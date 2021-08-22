@@ -40,8 +40,7 @@ const About = () => {
       <Box my="auto" textAlign="center" my={12}>
         <Text>I'm an italian Software Developer based in Berlin.</Text>
         <Text>
-          I develop in JavaScript and these are the main{" "}
-          <span className="colorSpan">technologies</span> I use:{" "}
+          I develop in JavaScript and these are the main technologies I use:
         </Text>
       </Box>
 
