@@ -49,10 +49,10 @@ const Contact = () => {
 
     await emailjs
       .send(
-        "service_f0yxx3l",
-        "template_ac2n19y",
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE,
         templateParams,
-        "user_mFKy74qndZlfDQh6mnohG"
+        process.env.NEXT_PUBLIC_EMAIL_USER
       )
       .then(
         (response) => {
