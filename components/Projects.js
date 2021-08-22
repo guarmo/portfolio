@@ -324,8 +324,8 @@ const Projects = () => {
             justifyContent="space-between"
           >
             <Box>
-              <Heading size="lg">CiccioFarro</Heading>
-              <Text my="4">Music producer's personal page.</Text>
+              <Heading size="lg">Ciccio Farro</Heading>
+              <Text my="4">A music producer's personal page.</Text>
               <HStack>
                 <Badge colorScheme="red">Layout</Badge>
                 <Badge colorScheme="gray">Responsive</Badge>
@@ -345,6 +345,36 @@ const Projects = () => {
             </Link>
           </Box>
         </Box>
+        
+        <Box className="card" minH="300px">
+          <Flex
+            minH="100%"
+            flexDirection="column"
+            justifyContent="space-between"
+          >
+            <Box>
+              <Heading size="lg">Constantin Carstens</Heading>
+              <Text my="4">A music producer's personal page.</Text>
+              <HStack>
+                <Badge colorScheme="red">Layout</Badge>
+                <Badge colorScheme="gray">Responsive</Badge>
+              </HStack>
+            </Box>
+            <Link href="https://github.com/guarmo/constantincarstens" target="_blank">
+              Code
+            </Link>
+          </Flex>
+          <Box className="go-corner">
+            <Link
+              className="go-arrow"
+              href="https://www.constantincarstens.com/"
+              target="_blank"
+            >
+              →
+            </Link>
+          </Box>
+        </Box>
+
       </Grid>
     </Flex>
   );
