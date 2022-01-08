@@ -20,6 +20,10 @@ export default function Home() {
           name="keywords"
           content="Armando Guarino, guarino, guarmo, portfolio"
         />
+        <meta
+          name="google-site-verification"
+          content="yDFsFl8o9YH5mlU4HDIkwA1GlPtB78DYjUU6eJ0BOUA"
+        />
         <meta name="author" content="Armando Guarino" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:url" content="https://www.armandoguarino.dev/" />
