@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Armando Guarino | Portfolio</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="description"
           content="Armando Guarino's personal portfolio."
